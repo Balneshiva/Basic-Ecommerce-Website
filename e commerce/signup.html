@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet"  href="signupcss.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <script>
+      function checkpass() 
+      {  
+        
+        var pw = document.getElementById("password").value;
+        var rpw =  document.getElementById("conpassword").value;
+
+        var mail = document.getElementById("email").value;
+         
+        if(pw == "") {  
+           alert("There is no password exist");
+           return false;  
+        }  
+       if(pw != rpw){
+          alert("**Both password field are not correct");
+             
+             return false;
+         }
+        if(pw.length < 8) {  
+          alert("**Password length must be atleast 8 characters");
+           return false;  
+        }  
+        
+        if(pw.length > 15) {  
+          alert("**Password length must not exceed 15 characters");
+           return false;  
+        }else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
+        alert("**Invalid Email")
+        
+      }else {  
+           alert("signup successfull");
+           window.location = "main.html";  
+           return true;
+        }  
+      }  
+      </script>
+    <title>Document</title>
+</head>
+
+<body>
+<div class="container"> 
+<div class="navbar">
+    <div class="icon">
+       <img class = "logo" src="logo.png" alt = "logo" />
+    </div>
+
+
+<div class="menu">
+<ul class="one">
+    <li class="one"><a href="ecommerce.html" >HOME</a></li>
+    <li class="one"><a href="#">ABOUT</a></li>
+    <li class="one"><a href="main.html">LOGIN</a></li>
+    <li class="one"><a href="#">CONTACT</a></li>
+
+
+</ul>
+
+</div>
+</div>
+<div class="form" action = "ecommerce.html" method = "POST">
+        <h2 >Signup Here</h2><br>
+        <p style="color: black;">Enter your Full name:</p>
+        <input type="text" id="full name" placeholder="Enter your Fullname"><br><br>
+
+        <p style="color: black;">Enter your Email:</p>
+        <input type="email" id="email" placeholder="Enter your email" name="email"><br><br>
+
+        <p style="color: black;">Enter a Strong Password:</p>
+        <input type="text" id="password" placeholder="Enter your password" ><br><br>
+
+        <p style="color: black;">Re-Enter Password:</p>
+        <input type="text" id ="conpassword" placeholder="Re-enter password"><br><br>
+        <input type = "submit" value="signup" onclick="checkpass()" >
+        
+
+    </div>
+
+
+</div>
+</body>
+</html>

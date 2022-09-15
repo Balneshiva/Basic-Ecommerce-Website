@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(download.jpg);
+    filter: brightness(100%);
+    background-size: cover;
+}
+
+.navbar
+{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    float: left;
+}
+
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.logo
+{
+   width: 200px;
+   height: 70px;
+   left: 0px;
+   top: 5px;
+   border-radius: 10px;
+}
+
+.menu
+{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul.one{
+    float: left;
+    display: flex;
+    margin-left: 300px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+ul.one li a{
+    text-decoration: solid;
+    font-family: 'Koulen', cursive;;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: o.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:  #FFD700;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 150px;
+    margin-top: 27px;
+    font-size: 25px;
+}
+
+
+
+.content{
+    width: 800px;
+    height: 400px;
+    left: 30px;
+}
+
+ul.twol{
+    padding-top: 100px;
+    float: left;
+    display: flex;
+    line-height: 2.5em;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+li.two{
+    color: white;
+    font-family: sans-serif;
+}
+
+div.form{
+    width: 250px;
+    height: 380px;
+    padding: 20px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    left: 1100px;
+    margin-top: 160px;
+    border-radius: 30px;
+    
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid white;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form button{
+    width: 200px;
+    height: 35px;
+    margin: 20px;
+}
+
+.form .btn a{
+    color: black;
+    font-size: 20px;
+    padding-left: 10px
+}
+
+.form p{
+    color: white;
+    font-family: sans-serif;
+    padding-left: 35px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+
+.form a{
+    color: darkturquoise;
+    font-family: sans-serif;
+    padding-top: 0px;
+    border-top: 0px;
+    padding-left: 75px;
+}
+

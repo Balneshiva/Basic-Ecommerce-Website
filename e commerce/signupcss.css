@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(download.jpg);
+    filter: brightness(100%);
+    background-size: cover;
+    display: flex;
+}
+
+.navbar
+{
+    width: 1100px;
+    height: 75px;
+    margin-top:0px ;
+    float: left;
+}
+
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.logo
+{
+   width: 200px;
+   height: 70px;
+   left: 0px;
+   top: 5px;
+   border-radius: 10px;
+}
+
+.menu
+{
+    width: 400px;
+    float: left;
+    height: 70px;
+    /*position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;*/
+}
+
+ul.one{
+    float: left;
+    display: flex;
+    margin-left: 300px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+ul.one li a{
+    text-decoration: solid;
+    font-family: 'Koulen', cursive;;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: o.4s ease-in-out;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 150px;
+    margin-top: 27px;
+    font-size: 25px;
+}
+
+ul li a{
+    text-decoration: solid;
+    font-family: 'Koulen', cursive;;
+    color: white;
+    font-weight: bold;
+    transition: o.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:  #FFD700;
+}
+
+.content{
+    width: 800px;
+    height: 400px;
+    left: 30px;
+}
+
+div.form{
+    width: 800px;
+    height: 500px;
+    padding: 20px;
+    background: linear-gradient(to top,rgba(237, 233, 233, 0.8)50%,rgba(221, 115, 115, 0.8)50%);
+    position: absolute;
+    left: 200px;
+    margin-top: 150px;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+
+.form h2{
+    width: 800px;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-left: -5px;
+    padding: 8px;
+
+}
+
+.form input{
+    width: 500px;
+    height: 35px;
+    background: transparent;
+    border: 3px solid blue;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    border-radius: 25px;
+    transition: 0.25px;
+}
+.form p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+
+}
+
+
+.form input:focus{
+    width: 600px;
+    height: 40px;
+    background: rgba(39, 39, 198, 0.6);
+    border: 3px solid rgba(18, 234, 57, 0.992);
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    border-radius: 15px;
+    transition: 0.25px;
+}
+
+
+.form .btn a{
+    color: black;
+    font-size: 20px;
+    padding-left: 10px
+}
+
+
+.form a{
+    color: darkturquoise;
+    font-family: sans-serif;
+    padding-top: 0px;
+    border-top: 0px;
+    padding-left: 75px;
+}
+
+
+.form input[type= "submit"]{
+    border: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    border: 3px solid #ffc400ec;
+    padding: 2px 10px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
